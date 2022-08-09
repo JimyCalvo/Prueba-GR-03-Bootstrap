@@ -1,0 +1,277 @@
+
+$font-family-sans-Serif: 'PT Sans', sans-serif;
+$primary:rgb(241, 139, 56);
+$secondary:black;
+$dark:rgb(29, 31, 39);
+
+
+header{
+    background-image: url("/img/portada.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.navbar{
+    background-color: $secondary;
+}
+
+.dropdown-menu{
+    background-color: $secondary !important;
+    padding: 4px !important;
+    border:none !important;
+}
+.dropdown-item>a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+@media (min-width: 768px){
+    .navbar{
+        background-color: $dark;
+    }
+    .navbar-expand-md .navbar-collapse {
+        height: 10px;
+        align-items: end;
+        justify-items: end;
+        padding:0px 30px 0px 30px;
+        margin:0px; 
+        border: 0px;
+    }
+
+    .nav-item {
+        position: relative;
+        top:8px;
+
+        justify-content: end;
+        text-align: center;
+        align-items: center;
+        background-color: black;
+        width: calc(100vw * 0.2);
+        margin-inline: 5px;
+        border-radius: 10px 10px 0px 0px;
+        transition: 3ms;
+        
+    }
+    .nav-item .nav-link{
+        color: white !important;
+        margin: 6px;
+    }
+    .dropdown-item{
+        text-decoration: none;
+        color:white !important;
+        padding:3px;
+    }
+    .nav-item:hover{
+        background: #181818 !important;
+        padding-top: 5px;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: inset 0px 5px 2px 2px #DD6729;
+    }
+    .dropdown-menu{
+        background-color: $secondary !important;
+        border-radius: 0%;
+    }
+}
+.nav-item:hover{
+    color:white!important;
+    background-color: #DD6729;
+
+}
+.nav-item>a:hover{
+    color:white!important;
+    text-decoration:underline;
+}
+.dropdown-item:hover{
+    color:white!important;
+    background-color: #DD6729!important;
+}
+.dropdown-item>a:hover{
+    color:white!important;
+    text-decoration:underline;
+}
+
+/* --------- Cuerpo-----------*/
+
+.carousel-caption {
+
+    display: block;
+    padding-top:  10px;
+    margin-top: calc(100vw*0.15);
+    background: rgba(0, 0, 0, 0.577);
+    font-size: 26px;
+    top:2vw;
+    width: calc(100vw*0.3);
+    height: calc(100vw*0.2);
+    overflow: hidden;
+    
+}
+@media screen and (max-width: 968px) {
+    .carousel-caption{
+        font-size: 15px;
+    }
+
+    
+}
+#carousel-caption-b{
+    width: calc(100vw*0.7);
+    font-size: 8vw;
+    text-align: center;
+    justify-content: center;
+}
+.btn {
+    background: black !important;
+    color: white !important;
+    border: solid 1px #DD6729 !important;
+    width: calc(100vw*0.15);
+    height: 5vw;
+    font-size: 25px;
+    font-weight:bolder;
+}
+.btn:hover{
+    background-color: #dd6829cb !important;
+    border: solid 1px #e9e9e9!important;
+
+}
+
+.carousel-item>img{
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    object-fit: cover !important;
+}
+.reciente-sec{
+    background-color: $dark
+}
+/*Proyectos*/
+.btn-2{
+    background: $primary !important;
+    color: white !important;
+    border: solid 1px #fdfcfc !important;
+    width: 20px !important;
+    height: 6vw ;
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.btn-2:hover{
+    background: $dark !important;
+    color: white !important;
+    border: solid 1px $primary !important;
+  
+}
+.card{
+    border-radius: 0% !important;
+}
+/*Fooder*/
+
+.footer-img{
+    background-image: url(https://raw.githubusercontent.com/PPC80/PruebaDiseno/main/img/footer.png);
+    background-repeat: no-repeat;
+    background-position: 0ch;
+    background-size: cover;
+    height: calc(100vw*0.4);
+}
+
+.form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $dark;
+    /* border: 1px solid green; */
+    color: white !important;
+    border-radius: 0%;
+}
+.input-group-text {
+    background-color: #181818 !important;
+    color: white !important;
+    border: transparent!important;
+    width: 80px;
+}
+.form-control {
+    background-color: #181818fb !important;
+    color: white !important;
+    border: transparent!important;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 300px;
+    margin: auto auto;
+    /* border: 1px solid red; */
+}
+
+.btn-enviar {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contactame {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-github {
+    background: black;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #0072b1;
+    color: white;
+  }
+
+  .fa-whatsapp {
+    background: #25D366;
+    color: white;
+  }
+
+  .fa-globe {
+    background: black;
+    color: white;
+  }
+
+  .btn-social {
+    /* border: 1px solid red; */
+    width: 20%;
+    margin-bottom: 10px;
+  }
+
+
+@import "../bootstrap/scss/bootstrap";
